@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content{
+            display: grid;
+            justify-content:center;
+            align-content: center;
+            height: 550px;            
+        }
+        .a{
+            margin: 10px;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+        }
+        #gamers{
+            width: 1000px;
+            margin-left: 10%;
+        }
+        .buttons{
+            display: grid;
+            justify-content: center;
+        }
+        #game{
+            margin-bottom: 10px;
+            background-color: darkslateblue;
+            height: 50px;
+            font-size: 18px;
+        }
+        #clear{
+            background-color: darkslateblue;
+            height: 50px;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        #take{
+            background-color: darkslateblue;
+            height: 50px;
+            font-size: 18px;
+        }
+        #take:hover{
+            background-color: darkslategray;
+        }
+        #game:hover{
+            background-color: darkslategray;
+        }
+        #clear:hover{
+            background-color: darkslategray;
+        }
+        body{
+            background-color:lightgray
+
+        }
+        #count{
+            width: 50px;
+            height: 30px;
+            border: 2px solid;
+            text-align: center;
+            
+        }
+        .count1{
+            display: grid;
+            justify-content: center;
+            margin-top: 10px;
+            font-size: 22px;
+        }
+        .forinp{
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="gamers">
+
+    </div>
+    <div class="buttons">        
+        <button onclick="randomZar()" id="game">Game</button>
+        <button id="clear">New Gamer</button>
+        <button id="take">To take</button>
+        <div class ="forinp">
+            <label >Maximum Points</label>
+            <input type="number" id="maxCount" min="10">
+        </div>
+        <div class="count1">
+            <div id="count"></div>
+        </div>
+
+    
+    </div>
+
+    <div id="content">
+        <div id="first_div" class="a"></div>
+        <div id="second_div" class="a"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
